@@ -31,9 +31,9 @@ export default function Home(props: any) {
 
     return (
         <Layout home>
-            <title>{siteTitle}</title>
+          <div className='table-responsive'>
             <table className="table table-bordered table-hover">
-                <thead>
+                <thead className='table-dark'>
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Name</th>
@@ -55,6 +55,7 @@ export default function Home(props: any) {
                     })}
                 </tbody>
             </table>
+            </div>
         </Layout>
     );
 }
